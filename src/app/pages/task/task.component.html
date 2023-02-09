@@ -1,0 +1,46 @@
+    <div class="row">
+      <div class="col-xs-12">
+        The current app developed in XNSG looks like this:
+      </div>
+    </div>
+    <div class="row center-xs">
+      <div class="col-xs-10" style="margin-top: .5rem;">
+        <img src="assets/images/aeb-translator-deepl-xnsg.png" alt="AEB DeepL"
+             style="width: 100%; border: 1px solid #030303"/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <ul>
+          <li>Language dropdowns with languages (source & target): DE, EN, FR, IT, ES, PT, NL, PL, RU</li>
+          <li>Button <span class="font-italic">Übersetzen / Translate</span> triggers translation</li>
+          <li>Button <span class="font-italic">In Zwischenablage kopieren / Copy to clipboard</span> copies content of
+            the right input box to clipboard and displays a success message (e.g. a growl)
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <ul>
+      <li>DeepL:
+        <ul>
+          <li>we use the free version - API URL is https://api-free.deepl.com/v2/translate</li>
+          <li><a href="https://www.deepl.com/docs-api" target="_blank">DeepL API docs</a></li>
+        </ul>
+      </li>
+    </ul>
+  
+    <ul>
+      <li>add a new default route <span class="font-italic">/translator</span> incl. module, empty component and routing
+      </li>
+      <li>add static text like displayed in the screenshot</li>
+      <li>add language dropdowns for source and target language. Default source language should be DE.
+        Default target language should be EN.
+      </li>
+      <li>add text areas for source and target text</li>
+      <li>add buttons to trigger translation and copy to clipboard</li>
+      <li>add a service for handling requests against DeepL API</li>
+      <li>combine them all to a working app</li>
+      <li>bonus: trigger translation 600 ms after someone stopped entering text in the left textarea</li>
+      <li>bonus: trigger translation when the left textarea looses focus (hint: blur)</li>
+    </ul>
